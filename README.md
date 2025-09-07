@@ -1,250 +1,161 @@
-## Supermarket Sales Analysis
+# 🛒 Supermarket Sales Analysis
 
-Grocery Stores are a vital part of everyday life, providing us with the food and essentials as we need.
+Supermarkets are an essential part of our daily lives, providing food and essentials we need every day.  
+With the growth of **online grocery applications**, every transaction is digitally recorded, generating **rich datasets** that reveal customer behavior, sales patterns, and profitability insights.  
 
-People often uses grocery delivery applications to order their products, making it easy to shop from home.
+This project leverages supermarket transaction data to explore **sales trends, customer preferences, and profit drivers**—helping us understand how well the business is performing.
 
-Each transaction made through these applications is recorded in detail creating a valuable dataset.
+---
 
-This project looks at a same data of a supermarket transactions to understand how well it is performing.
+## 📊 Dataset
 
-## Dataset
+- **Source:** [Kaggle – Supermart Grocery Sales Dataset](https://www.kaggle.com/datasets/mohamedharris/supermart-grocery-sales-retail-analytics-dataset)  
+- **Region Covered:** Tamil Nadu, India  
+- **Details:** The dataset includes transactional-level information such as:
+  - Customer details  
+  - Product categories & subcategories  
+  - Sales, discounts, and profit margins  
+  - Order dates, regions, and cities  
 
-The dataset is sourced from Kaggle which simulates grocery sales activities within Tamil Nadu state of India.
+---
 
-The dataset includes various columns that provide detailed information about each transaction at the Supermarket.
+## 🎯 Problem Statement
 
-**Link to the Dataset :** [Supermarket Sales Dataset](https://www.kaggle.com/datasets/mohamedharris/supermart-grocery-sales-retail-analytics-dataset)
+Analyze supermarket sales data to **identify key factors influencing sales and profitability**.  
+The goal is to provide insights that improve **operational efficiency** and **maximize profit**.
 
-## Problem Statement
+---
 
-- To analyze Supermarket Sales data, identifying key factors for improving profitability and operational efficiency.
+## 📑 Table of Contents
 
-## Table of Contents
+1. [Environment Setup](#-environment-setup)  
+2. [Libraries Required](#-libraries-required)  
+3. [Getting Started](#-getting-started)  
+4. [Project Workflow](#-project-workflow)  
+5. [Data Visualization](#-data-visualization)  
+6. [Conclusion](#-conclusion)  
 
-- [Setting up the Enviroment](#setting-up-the-enviroment)
-- [Libraries required for the Project](#libraries-required-for-the-project)
-- [Getting started with Repository](#getting-started)
-- [Steps involved in the Project](#steps-involved-in-the-project)
-- [Conclusion](#conclusion)
+---
 
-## Setting up the Enviroment
+## ⚙️ Environment Setup
 
-Jupyter Notebook is required for this project and you can install and set it up in the terminal.
+You’ll need **Jupyter Notebook** to run this project.
 
-- Install the Notebook
-```
-pip install notebook
-```
-
-- Run the Notebook
-```
-jupyter notebook
-```
-
-## Libraries required for the Project
-
-**NumPy**
-
-- Go to the terminal and run this code
-```
-pip install numpy
-```
-
-**Pandas**
-
-- Go to the terminal and run this code
-```
-pip install pandas
-```
-
-**Matplotlib**
-
-- Go to the terminal and run this code
-```
-pip install matplotlib
-```
-
-**Seaborn**
-
-- Go to the terminal and run this code
-```
-pip install seaborn
-```
-
-## Getting Started
-
-- Clone this repository to your local machine by using the following command :
+- Install Jupyter:
 ```bash
-git clone https://github.com/TheMrityunjayPathak/Supermarket-Sales-Analysis.git
-```
+pip install notebook
+Run Jupyter:
 
-## Steps involved in the Project
+jupyter notebook
 
-**Importing Libraries**
+📦 Libraries Required
 
-  - Importing necessary libraries like numpy, pandas, matplotlib and seaborn.
- 
-**Reading CSV File**
+Install the following libraries before running the project:
 
-  - Reading CSV file by using pd.read_csv() method.
- 
-**Overview of the Dataset**
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install seaborn
 
-  - Information about shape and size of the dataset.
- 
-  - Types of column present in the dataset (numerical, categorical, text).
- 
-  - Detailed info about the dataset using df.info() method.
+🚀 Getting Started
 
-**Handling Null values in the Dataset**
+Clone this repository to your local machine:
 
-  - This dataset does not contain any null values.
- 
-**Unique values in aach Categorical Column**
+git clone https://github.com/ashish48ak/Supermarket-Sales-Analysis.git
 
-  - Unique customer names in the data.
- 
-  - Unique product categories in the data.
- 
-  - Unique product sub-categories in the data.
- 
-  - Unique cities in the data.
- 
-  - Unique regions in the data.
- 
-**Changing DataType of Columns**
 
-  - Modifying the datatype of order_date column to pandas datetime format.
+Open the Jupyter Notebook and follow the steps for analysis.
 
-**Utilizing existing information to create new Columns**
+🔎 Project Workflow
+1. Importing Libraries
 
-  - Extracting year, month and dates from order_date column.
- 
-  - Extracting discount_amount from discount percent column by using mathematical formulas.
- 
-**Statistical Analysis**
+NumPy, Pandas, Matplotlib, Seaborn
 
-  - No. of products sold in each category.
-    
-  - No. of products sold in each sub category.
- 
-  - No. of products sold in each city.
- 
-  - No. of products sold in each region.
- 
-  - No. of products sold each year, month and date.
- 
-**Data Visualization**
+2. Reading Data
 
-  - No. of products sold in each category.
-  
-![download](https://github.com/user-attachments/assets/201f08b8-b5c0-44db-bd8a-d9eb8f82a76e)
+Using pd.read_csv() to load the dataset
 
-  - No. of products sold in each sub category.
-  
-![download](https://github.com/user-attachments/assets/47c85913-0d7c-4bed-961a-62c4846497b3)
+3. Dataset Overview
 
-  - No. of products sold in each city.
-  
-![download](https://github.com/user-attachments/assets/0971cebf-5d67-42d6-886d-1aa4cafcd353)
+Shape & size of data
 
-  - No. of products sold in each region.
-  
-![download](https://github.com/user-attachments/assets/f4e9ad6c-f9c5-427a-8162-4f027224690e)
+Data types (numerical, categorical, text)
 
-  - No. of products sold each year.
+Info using df.info()
 
-![download](https://github.com/user-attachments/assets/390b92f8-503b-4385-bb75-c58f18db810e)
+4. Data Preprocessing
 
-  - No. of products sold each month.
-    
-![download](https://github.com/user-attachments/assets/17c52c47-ab03-406e-967e-94555f553a9e)
+Checked and confirmed no null values
 
-  - No. of products sold each date.
+Converted order_date to datetime format
 
-![download](https://github.com/user-attachments/assets/f5349f07-3b08-4133-8b4e-f5d3b5d4483f)
+Extracted year, month, day from date
 
-  - Total sales in each category.
+Calculated discount_amount
 
-![download](https://github.com/user-attachments/assets/a891f53a-093a-41d6-b09f-d27a38691ea8)
+5. Statistical Insights
 
-  - Total sales in each sub category.
+Products sold by category, subcategory, city, region
 
-![download](https://github.com/user-attachments/assets/1a07ab89-3373-44ca-8810-34fc97638766)
+Sales and profit trends by year, month, day
 
-  - Total sales in each region.
+Top-performing customers
 
-![download](https://github.com/user-attachments/assets/cd927051-d2db-400c-8d5e-804476163c22)
+6. Data Visualization
 
-  - Total sales in each city.
-  
-![download](https://github.com/user-attachments/assets/0bbcafa6-6734-4a84-ac77-d40a108f8b26)
+Multiple visualizations to uncover patterns:
 
-  - Total sales in each month.
+📦 Products sold by category, subcategory, region, city
 
-![download](https://github.com/user-attachments/assets/0156845d-6dc3-4bb4-9a82-7ac5b1d510ba)
+💰 Total sales by category, region, city, month, year
 
-  - Total sales in each year.
+📈 Total profit across multiple dimensions
 
-![download](https://github.com/user-attachments/assets/844c3c16-9020-4215-b716-7552e05f67fa)
+🏆 Top customers by sales & profit
 
-  - Total profit in each category.
+🎟️ Discounts availed
 
-![download](https://github.com/user-attachments/assets/57f1bb11-cba0-4075-b76b-8ff7e5bbbfe4)
+📉 Data Visualization Highlights
 
-  - Total profit in each sub category.
-  
-![download](https://github.com/user-attachments/assets/70364c48-a0ca-4785-a8db-1b3f2b0845f6)
+Sales Distribution by Category & Subcategory
 
-  - Total profit in each region.
+Regional & City-level Sales Patterns
 
-![download](https://github.com/user-attachments/assets/db64f973-16a0-477e-bff5-626182944a5f)
+Monthly & Yearly Sales Trends
 
-  - Total profit in each city.
+Profitability Analysis
 
-![download](https://github.com/user-attachments/assets/f3b3794a-3a88-4ef4-8024-830d8ecaacd3)
+Top Customers by Sales & Profit
 
-  - Total profit in each month.
-  
-![download](https://github.com/user-attachments/assets/d8925469-ae66-4967-aa43-813a5a8e0015)
+Discount Utilization Analysis
 
-  - Total profit in each year.
+(All charts available in the notebook)
 
-![download](https://github.com/user-attachments/assets/5f063f3d-a5d0-4c25-967f-613bb00cecd9)
 
-  - Customers with highest amount of total sales.
 
-![download](https://github.com/user-attachments/assets/05921566-eadf-4add-9e80-4e1f0fea47a2)
 
-  - Customers with highest profit on their purchase.
+🏁 Conclusion
 
-![download](https://github.com/user-attachments/assets/723fe0a9-420b-4ec7-83c3-52438cb4029a)
+Key findings from the analysis:
 
-  - Total discount availed by customers.
+📊 Analyzed 9000+ customer transactions
 
-![download](https://github.com/user-attachments/assets/8dba0aa8-bcb0-420d-8b34-06f59f1f5480)
+🍫 Snacks made up over 15% of sales, showing strong demand
 
-## Conclusion
+🌍 West region contributed 32% of total sales, the top-performing region
 
-Here are some key findings about the analysis :
+🥤 Within beverages, Health Drinks & Soft Drinks were the most profitable
 
-- Analyzed purchasing pattern of 9000+ customers of Supermarket.
-  
-- More than 15% of the products sold were Snacks.
-  - Shows that Snacks are a convenient choice and a big source of revenue.
-    
-- More than 32% of the sales were occurred in West region of Supermarket.
-  - Suggests that West region is a strong performing area as compared to others.
-    
-- Health and Soft drinks are the most profitable category in Beverages.
-  - Shows that both type of drinks option sells well.
-    
-- November was the most profitable month contributing about 15% of the total annual profits.
-  - Makes it an ideal time for running promotions and special offers.
+📅 November contributed ~15% of yearly profit → best month for promotions
 
-<div align='left'>
-  
-**[`^        Scroll to Top       ^`](#supermarket-sales-analysis)**
+📜 License
 
-</div>
+This project is licensed under the MIT License – feel free to use, share, and adapt with attribution.
+
+<div align="center">
+
+✨ This project demonstrates how data analysis can uncover valuable insights in retail sales. ✨
+
+🔝 Back to Top
+
+</div> ```
