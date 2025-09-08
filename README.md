@@ -10,7 +10,7 @@ This project leverages supermarket transaction data to explore **sales trends, c
 ## 📊 Dataset
 
 - **Source:** [Kaggle – Supermart Grocery Sales Dataset](https://www.kaggle.com/datasets/mohamedharris/supermart-grocery-sales-retail-analytics-dataset)  
-- **Region Covered:** Tamil Nadu, India  
+- **Region Covered:**  India  
 - **Details:** The dataset includes transactional-level information such as:
   - Customer details  
   - Product categories & subcategories  
